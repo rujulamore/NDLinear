@@ -1,11 +1,16 @@
-✅ NdLinear Sentiment Classifier - Final Evaluation
+✅ NdLinear Sentiment Classifier - Final Results
 
-Training Samples Used: 1000  
-Validation Samples Used: 200  
-Epochs: 15  
-Model: distilbert-base-uncased + NdLinear
+Training Configuration:
+- Model: distilbert-base-uncased + NdLinear
+- Dataset: SST2 (GLUE Benchmark)
+- Training Samples: 1000
+- Validation Samples: 200
+- Epochs: 15
+- Final Training Loss: 0.0566
+- Eval Accuracy: 0.8200
 
-Eval Accuracy: 0.8650  
-Final Training Loss: 0.3292  
-
-Note: Checkpoints not included due to size. Model can be retrained using `ndlinear_sentiment.py`.
+Notes:
+- Model converged well with consistent drop in training loss.
+- NdLinear used as a drop-in replacement for nn.Linear in the classification head.
+- HuggingFace Trainer was used for training and evaluation.
+- Tokenizer warning is safe to ignore (compatibility note for transformers >= 5.0.0).
