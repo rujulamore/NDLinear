@@ -1,5 +1,6 @@
 ✅ NdLinear Sentiment Classifier - Final Results
 
+
 Training Configuration:
 - Model: distilbert-base-uncased + NdLinear
 - Dataset: SST2 (GLUE Benchmark)
@@ -8,6 +9,7 @@ Training Configuration:
 - Epochs: 15
 - Final Training Loss: 0.0566
 - Eval Accuracy: 0.8200
+
 
 Notes:
 - Model converged well with consistent drop in training loss.
